@@ -1,24 +1,91 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Siete Mares</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Siete Mares</h1>
-    <p>Tu nueva web, lista para zarpar 🚤</p>
-  </header>
+  <!-- Barra de navegación (según Figma nodo 8991:151987) -->
+  <nav class="nav">
+    <div class="nav-left">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/los7maresrestaurante/?locale=es_LA" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg class="nav-ico" viewBox="0 0 24 24" fill="#00455B" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22 12.06C22 6.505 17.523 2 12 2S2 6.505 2 12.06c0 5.027 3.657 9.204 8.438 9.94v-7.03H7.898v-2.91h2.54V9.845c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.196 2.238.196v2.47h-1.261c-1.243 0-1.63.774-1.63 1.567v1.883h2.773l-.443 2.91h-2.33V22C18.343 21.264 22 17.087 22 12.06Z"/>
+        </svg>
+      </a>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/sietemaresco/?hl=es" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg class="nav-ico" viewBox="0 0 24 24" fill="#00455B" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6ZM18.5 6.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/>
+        </svg>
+      </a>
+      <!-- WhatsApp -->
+      <a href="https://web.whatsapp.com/send?phone=573218226028&text=Hola%2C%20Vengo%20de%20la%20p%C3%A1gina%20Web%20y%20me%20gustar%C3%ADa%20hacer%20una%20reserva.%20Mi%20nombre%20es%3A" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg class="nav-ico" viewBox="0 0 24 24" fill="#00455B" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.04 2a9.94 9.94 0 0 0-8.5 15.1L2 22l5.07-1.52A10 10 0 1 0 12.04 2Zm0 2a8 8 0 1 1 0 16c-1.26 0-2.45-.3-3.5-.84l-.25-.13-2.96.89.9-2.9-.14-.24A8 8 0 0 1 12.04 4Zm-4 3.5c.2-.46.44-.47.65-.48h.55c.16 0 .43-.07.66.32.24.43.83 1.45.9 1.56.07.12.11.26.02.42-.1.17-.15.27-.29.42-.14.15-.31.33-.45.45-.15.12-.3.26-.13.53.17.26.76 1.24 1.63 2 .9.8 2.02 1.2 2.31 1.33.3.14.47.12.65-.06.18-.18.75-.88.95-1.18.2-.3.39-.25.66-.15.27.1 1.7.8 1.98.94.29.14.48.21.55.33.07.13.07.73-.17 1.43-.25.7-1.45 1.34-1.99 1.39-.5.05-1.14.2-3.69-.76-3.12-1.23-5.12-4.3-5.29-4.5-.17-.2-1.26-1.67-1.26-3.2 0-1.54.83-2.3 1.13-2.61Z"/>
+        </svg>
+      </a>
+    </div>
+    <div class="nav-center">
+      <a href="#" class="nav-link">UBICACIÓN</a>
+      <a href="#" class="nav-link">NOSOTROS</a>
+      <a href="#" class="nav-link">CONTACTO</a>
+    </div>
+    <div class="nav-right">
+      <a href="#" class="btn btn-outline">MENÚ</a>
+      <a href="#" class="btn btn-primary">RESERVAR</a>
+    </div>
+  </nav>
 
-  <main>
-    <section>
-      <h2>Bienvenido</h2>
-      <p>Empieza a editar <code>index.html</code>, <code>assets/css/styles.css</code> y <code>assets/js/app.js</code>.</p>
-      <button id="helloBtn">Say hello</button>
+  <!-- Hero con logo centrado y foto de fondo -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-center">
+      <img class="hero-logo-img" src="assets/img/logo-siete-mares.png" alt="Siete Mares" />
+    </div>
+  </section>
+
+  <!-- Barra horizontal (sección siguiente del Figma 9072:152526) -->
+  <section class="strip">
+    <div class="strip-inner">
+      <h2 class="strip-title">MENÚ</h2>
+      <p class="strip-desc">Somos una propuesta gastronómica de comida de mar, bebidas artesanales, ubicados en la bahía más linda de la ciudad de Santa Marta.</p>
+      <div class="strip-cta">
+        <a class="btn btn-outline-white" href="https://menu.tu-mesa.com/siete-mares-qr/7140/" target="_blank" rel="noopener">MENÚ</a>
+        <a class="btn btn-white" href="https://7mares.com.co/reservas/" target="_blank" rel="noopener">RESERVAR</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección ubicaciones (Figma 8991:152009) -->
+  <section class="locations">
+    <div class="locations-inner">
+      <div class="location">
+        <div class="photo" style="background-image:url('assets/img/image-1.jpg')"></div>
+        <h3>Santa Marta</h3>
+        <p>Frente a la Marina Internacional</p>
+        <p>Somos una propuesta gastronómica de comida de mar, bebidas artesanales y compromiso con el medio ambiente, ubicados en la bahía más linda de la ciudad de Santa Marta.</p>
+        <div class="loc-cta">
+          <a class="btn btn-loc" href="https://www.google.com/maps/dir/Siete+Mares+Santa+Marta/Siete+Mares+Santa+Marta,+Cra.+1c+%2322-93,+Santa+Marta,+Magdalena/@11.2420244,-74.2575847,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8ef4f57d120771cf:0x20decef75156015f!2m2!1d-74.216299!2d11.2420272!1m5!1m1!1s0x8ef4f57d120771cf:0x20decef75156015f!2m2!1d-74.216299!2d11.2420272!3e0?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D." target="_blank" rel="noopener">ver ubicación</a>
+        </div>
+      </div>
+      <div class="location">
+        <div class="photo" style="background-image:url('assets/img/image-2.jpg')"></div>
+        <h3>Palomino</h3>
+        <p>Carrera 5 #5-69</p>
+        <p>Somos una propuesta gastronómica de comida de mar, bebidas artesanales y compromiso con el medio ambiente, ubicados en la bahía más linda de la ciudad de Santa Marta.</p>
+        <div class="loc-cta">
+          <a class="btn btn-loc" href="https://www.google.com/maps/dir/Siete+Mares+Santa+Marta/Siete+Mares+Santa+Marta,+Cra.+1c+%2322-93,+Santa+Marta,+Magdalena/@11.2420244,-74.2575847,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x8ef4f57d120771cf:0x20decef75156015f!2m2!1d-74.216299!2d11.2420272!1m5!1m1!1s0x8ef4f57d120771cf:0x20decef75156015f!2m2!1d-74.216299!2d11.2420272!3e0?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D." target="_blank" rel="noopener">ver ubicación</a>
+        </div>
+      </div>
+    </div>
     </section>
-  </main>
 
   <script src="assets/js/app.js"></script>
 </body>

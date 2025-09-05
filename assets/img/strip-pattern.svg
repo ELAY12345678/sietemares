@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <g id="wave">
+      <path d="M0 32a32 32 0 0 1 64 0" fill="none" stroke="#0b5f72" stroke-width="2"/>
+      <path d="M8 32a24 24 0 0 1 48 0" fill="none" stroke="#0b5f72" stroke-width="2"/>
+      <path d="M16 32a16 16 0 0 1 32 0" fill="none" stroke="#0b5f72" stroke-width="2"/>
+      <path d="M24 32a8 8 0 0 1 16 0" fill="none" stroke="#0b5f72" stroke-width="2"/>
+    </g>
+  </defs>
+  <rect width="64" height="64" fill="none"/>
+  <use href="#wave"/>
+  <g transform="translate(0,32)">
+    <use href="#wave"/>
+  </g>
+  <g transform="translate(32,0)">
+    <use href="#wave"/>
+  </g>
+  <g transform="translate(32,32)">
+    <use href="#wave"/>
+  </g>
+</svg>
+
