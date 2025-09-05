@@ -38,6 +38,25 @@ body { margin: 0; font-family: 'Inter', system-ui, -apple-system, Segoe UI, Robo
 .btn-white { background: #fff; color: #00455B; }
 .btn-outline-white { background: transparent; color: #fff; border: 1px solid #fff; }
 
+/* Sección callout con imagen de fondo (Figma 8991:152055) */
+.callout {
+  position: relative;
+  height: 770px;
+  color: #fff;
+  background-image: linear-gradient(to left, rgba(0,69,91,1), rgba(0,69,91,0)), url('../img/image-7.jpg');
+  background-size: auto, cover;
+  background-position: 0% 0%, 50% 50%;
+}
+.callout-inner { position: absolute; inset: 0; display: grid; align-content: center; justify-items: start; padding: 0 24px 0 97px; text-align: left; }
+.callout-title { margin: 0 0 12px; font-size: 32px; letter-spacing: 2px; text-transform: uppercase; font-family: 'RF Dewi', 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; width: 601px; }
+.callout-desc { margin: 0 0 24px; max-width: 583px; font-size: 18px; }
+.callout-cta { display: flex; gap: 15px; justify-content: flex-start; }
+.btn-invert { background: #fff; color: #00455B; }
+.btn-outline-invert { background: transparent; color: #fff; border: 1px solid #fff; }
+.callout-cta .btn { height: 60px; padding: 0 34px; display: inline-flex; align-items: center; justify-content: center; font-weight: 800; text-transform: uppercase; }
+.btn-menu-narrow { min-width: 143px; }
+.btn-reserve-wide { min-width: 188px; }
+
 @media (max-width: 900px) {
   .nav { grid-template-columns: 1fr auto; gap: 12px; }
   .nav-center { display: none; }
@@ -59,3 +78,36 @@ body { margin: 0; font-family: 'Inter', system-ui, -apple-system, Segoe UI, Robo
   .locations-inner { grid-template-columns: 1fr; }
   .location .photo { height: 380px; }
 }
+
+@media (max-width: 900px) {
+  .callout-inner { justify-items: center; padding: 0 24px; text-align: center; }
+  .callout-title { width: auto; }
+  .callout-desc { max-width: 95%; }
+}
+
+/* CLUB 7 MARES (Figma 8991:152014) */
+.club { background: #00455B; color: #F1EEE5; padding: 0; }
+.club-inner { width: 100%; margin: 0; }
+/* Encabezado con textura */
+.club-header { position: relative; background: #00455B url('../img/strip-pattern.svg') center/180px repeat; padding: 72px 0 56px; text-align: center; }
+.club-header::before { content: ""; position: absolute; inset: 0; background: radial-gradient(1200px 400px at 50% -200px, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 60%); mix-blend-mode: soft-light; opacity: 0.6; }
+.club-title { position: relative; margin: 0; font-size: 43px; letter-spacing: 2px; text-transform: uppercase; font-family: 'RF Dewi', 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+.club-grid { display: grid; grid-template-columns: repeat(2, 1fr); }
+.club-tile { position: relative; height: 784px; background-size: cover; background-position: center; }
+.club-tile::before { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.5); }
+.club-tile .tile-title { position: absolute; left: 50%; top: 38%; transform: translateX(-50%); margin: 0; color: #F1EEE5; font-size: 43px; text-transform: uppercase; text-align: center; font-family: 'RF Dewi', 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; padding: 0 16px; z-index: 1; }
+.club-tile .tile-cta { position: absolute; left: 50%; top: 62%; transform: translateX(-50%); background: #fff; color: #00455B; height: 60px; padding: 0 34px; display: inline-flex; align-items: center; justify-content: center; font-weight: 800; text-transform: uppercase; text-decoration: none; min-width: 188px; box-shadow: 0 4px 14px rgba(255,255,255,0.15); z-index: 1; }
+
+@media (max-width: 900px) {
+  .club-grid { grid-template-columns: 1fr; }
+}
+
+/* Sección final con logo sobre imagen (Figma 9010:152136) */
+.final { position: relative; height: 770px; background: url('../img/image-8.jpg') center/cover no-repeat; }
+.final::before { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.37); }
+.final-inner { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 24px; }
+.final-inner img { width: 549px; max-width: 80%; height: auto; filter: drop-shadow(0 0 13px rgba(0,0,0,0.8)); }
+.final-cta { display: flex; gap: 15px; }
+.btn-final { height: 60px; min-width: 233px; padding: 0 34px; display: inline-flex; align-items: center; justify-content: center; font-weight: 800; text-transform: uppercase; }
+.btn-final-outline { color: #fff; border: 1px solid #fff; background: transparent; }
+.btn-final-filled { color: #00455B; background: #fff; }
