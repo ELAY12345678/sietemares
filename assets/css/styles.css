@@ -111,3 +111,27 @@ body { margin: 0; font-family: 'Inter', system-ui, -apple-system, Segoe UI, Robo
 .btn-final { height: 60px; min-width: 233px; padding: 0 34px; display: inline-flex; align-items: center; justify-content: center; font-weight: 800; text-transform: uppercase; }
 .btn-final-outline { color: #fff; border: 1px solid #fff; background: transparent; }
 .btn-final-filled { color: #00455B; background: #fff; }
+
+/* Sección contacto/ubicaciones (Figma 8991:152057) */
+.contact { display: grid; grid-template-columns: 1fr 1fr; height: 784px; }
+.contact-left { position: relative; background: #00455B url('../img/strip-pattern.svg') center/180px repeat; color: #F1EEE5; padding: 0 24px 0 97px; display: grid; align-content: center; }
+.contact-left::before { content: ""; position: absolute; inset: 0; background: radial-gradient(1200px 400px at 50% -200px, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 60%); mix-blend-mode: soft-light; opacity: 0.6; }
+.contact-inner { position: relative; max-width: 557px; }
+.contact-title { margin: 0 0 12px; font-size: 32px; letter-spacing: 1px; text-transform: uppercase; font-family: 'RF Dewi', 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+.contact-sub { margin: 0 0 6px; font-size: 18px; }
+.contact-hr { height: 1px; background: #F1EEE5; opacity: 0.6; margin: 10px 0 18px; }
+.contact-desc { margin: 0 0 18px; font-size: 18px; }
+.contact-cta { display: flex; }
+.btn-contact { background: #fff; color: #00455B; height: 60px; padding: 0 34px; display: inline-flex; align-items: center; justify-content: center; font-weight: 800; text-transform: uppercase; min-width: 306px; }
+.contact-right { background: url('../img/image-9.jpg') center/cover no-repeat; }
+
+/* Footer (Figma 8991:152071) */
+.footer { background: #222222; color: #F1EEE5; height: 218px; display: grid; align-items: center; }
+.footer-inner { max-width: 1440px; margin: 0 auto; padding: 0 97px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; }
+.footer-logo { width: 344px; max-width: 60%; height: auto; background: none; }
+.footer-copy { justify-self: end; text-align: right; font-size: 18px; font-weight: 500; font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif; }
+
+@media (max-width: 900px) {
+  .footer-inner { grid-template-columns: 1fr; gap: 12px; padding: 24px; text-align: center; }
+  .footer-copy { justify-self: center; text-align: center; font-size: 16px; }
+}
